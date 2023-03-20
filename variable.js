@@ -105,7 +105,152 @@ console.log(userProfile);
 */
 
 // Переменная var - ключевое отличие - она видна за пределами блока
-
+/*
 if (true) {
-    
+    var size = 15;
 }
+console.log(size);
+*/
+
+//Динамическая типизация
+/*
+let userName;
+
+console.log(typeof userName);
+
+userName = 'begginer program';
+
+console.log(typeof userName);
+
+userName = 58;
+
+console.log(typeof userName);
+*/
+//Типы данных
+/*
+Undefined - неопределённый тип,
+null - так же, как и undefined, содержит только одно значение null
+Boolean - Булевый, или логический тип. Может принимать
+только два значения: true, false
+*/
+/*
+let willYouMarryMe = false;
+if (willYouMarryMe) {
+    console.log(':)');
+} else {
+    console.log(':(');
+}
+*/
+
+// Так же можно использовать с операторами сравнения
+/*
+let trueOrFalse = 58 > 18;
+console.log(trueOrFalse);
+*/
+
+// Number: представлен в виде целых и дробных чисел
+/*
+let userAge = 20;
+let userHight = 1.83;
+console.log(userAge);
+console.log(typeof userAge);
+console.log(userHight);
+console.log(typeof userHight);
+*/
+
+// Infinity - математическая бесконечность
+/*
+let getInfinity = 58 / 0;
+console.log(getInfinity);
+console.log(typeof getInfinity);
+*/
+
+// NaN - результата математической ошибки
+/*
+let getNan = 'Alexey' / 10;
+console.log(getNan);
+console.log(typeof getNan);
+*/
+
+// BigInt - большое число
+// number не может быть больше 9007199254740991
+// или меньше -9007199254740991
+/*
+const bigInteger = 12345678901234567890123456789n;
+console.log(typeof bigInteger);
+*/
+
+// String - строка, например 'my name is Alexey'
+// "my name is Alexey"
+// обратные кавычки могут иметь приятный результат
+/*
+let userAge = 34;
+let userAgeInfo = `Возраст: ${userAge}`;
+console.log(userAgeInfo);
+*/
+
+// Объект {} и может содержать в себе несколько свойств
+/*
+let userInfo = {
+    name: "Alexey",
+    age: 36
+}
+console.log(userInfo);
+console.log(typeof userInfo);
+*/
+
+// Symbol
+/*
+let id = Symbol("id");
+console.log(typeof id);
+*/
+
+// Function
+/*
+let funcVariable = function name (params) {
+    //код функции
+}
+console.log(typeof funcVariable);
+*/
+
+// Преобразование типов
+
+// Строковое преобразование
+/*
+let userAge = 34;
+console.log(userAge);
+console.log(typeof userAge);
+
+userAge = String(userAge);
+
+console.log(userAge);
+console.log(typeof userAge);
+*/
+
+// Преобразование true в строку
+/*
+let userTrue = true;
+console.log(userTrue);
+console.log(typeof userTrue);
+
+userTrue = String(userTrue);
+
+console.log(userTrue);
+console.log(typeof userTrue);   // в данном случае true будет уже как строка
+
+/*
+let userAge = "72" / "2";
+console.log(userAge);
+console.log(typeof userAge);
+*/
+
+// Логическое преобразование
+let userAge = 58;       // но число "0" вернёт false. При этом строка "0" будет true
+console.log(userAge);
+console.log(typeof userAge);
+
+userAge = Boolean(userAge);
+
+console.log(userAge);
+console.log(typeof userAge);
+
