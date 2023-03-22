@@ -308,3 +308,64 @@ let userAge = 30 - 6;
 let userCash = -800;
 */
 
+// Математические действия
+/*
+let x;
+x = 5 + 8;
+console.log(`Результат сложения: ${x}`);
+
+x = 45 - 12;
+console.log(`Результат вычитания: ${x}`);
+
+x = 45 * 12;
+console.log(`Результат умножения: ${x}`);
+
+x = 45 - 12;
+console.log(`Результат вычитания: ${x}`);
+
+x = 11 % 3;
+console.log(`Результат взятия от деления: ${x}`);
+
+x = 5 ** 3;
+console.log(`Результат возведения в степень: ${x}`);
+*/
+
+// Складываем строки
+/*
+let resultOne = "My" + " name" + " is" + " Alexey";
+console.log(resultOne);
+
+let resultTwo = "Freelance " + 58;  //порядок значения не имеет
+console.log(typeof resultTwo);
+console.log(resultTwo);
+
+let resultTree = 2 + "2";
+console.log(resultTree);
+
+let resultFour = 54 - 20 + " Freelance";
+console.log(resultFour);
+*/
+// Сложение и преобразование строк - это особенность бинарного оператора сложения.
+// Другие арифметические операторы работают только с числами, соответственно
+// преобразовывают все операнды в числа.
+/*
+let resultOne = "25" - 5;
+console.log(resultOne);
+
+let resultTwo = "80" * 10;
+console.log(resultTwo);
+
+let resultTree = 3 * "Freelance";
+console.log(resultTree);
+console.log(typeof resultTree);
+*/
+
+// Унарный оператор сложения +
+
+// Со строками
+let resultOne = +"25";
+console.log(typeof resultOne);
+console.log(resultOne);     // Результат преобразования строки в число
+
+
+
