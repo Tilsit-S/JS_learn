@@ -245,6 +245,7 @@ console.log(typeof userAge);
 */
 
 // Логическое преобразование
+/*
 let userAge = 58;       // но число "0" вернёт false. При этом строка "0" будет true
 console.log(userAge);
 console.log(typeof userAge);
@@ -253,4 +254,56 @@ userAge = Boolean(userAge);
 
 console.log(userAge);
 console.log(typeof userAge);
+*/
+
+// ТИПЫ ДАННЫХ
+/*
+let userName;
+console.log(typeof userName);
+userName = "Alexey";
+console.log(typeof userName);
+userName = 58;
+console.log(typeof userName);
+*/
+// Тип данных меняется, когда мы изменяем ему значение
+
+// Undefined - неопределённый тип
+/*
+let userName;
+console.log(typeof userName);
+console.log(userName);
+*/
+// Примеры использованияю Проверяем, определена ли переменная
+/*
+if (userName === undefined) {
+    console.log('Переменная НЕ определена');
+} else {
+    console.log('Переменная определена');
+}
+
+if (typeof userName === 'undefined') {
+    console.log('Переменная НЕ определена');
+} else {
+    console.log('Переменная определена');
+}
+*/
+
+
+// ОПЕРАТОРЫ:
+// Термины: "унарный", "бинарный", "операнд"
+//Операнд - это то, к чему применяется оператор, их ещё называют аргументы.
+
+/*
+let userAge = 30 - 6; // Числа 30 и 6 - это операнды
+let userHight = h-y; // Переменные h и y - это операнды
+*/
+
+//Бинарный оператор - который применяется к двум операндам, например "-", "+".
+/*
+let userAge = 30 - 6;
+*/
+
+// Унарным считается оператор, который применяется только к одному операнду
+let userCash = -800;
+
 
