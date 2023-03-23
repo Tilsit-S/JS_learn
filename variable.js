@@ -357,15 +357,145 @@ console.log(resultTwo);
 
 let resultTree = 3 * "Freelance";
 console.log(resultTree);
-console.log(typeof resultTree);
+console.log(typeof resultTree);     //null
 */
 
 // Унарный оператор сложения +
 
 // Со строками
-let resultOne = +"25";
+/*
+let resultOne = +"25";      // задаём строке значение "число" с помощью "+"
 console.log(typeof resultOne);
 console.log(resultOne);     // Результат преобразования строки в число
+
+let resultTwo = +10
+console.log(resultTwo);
+console.log(typeof resultTwo);
+*/
+
+// Унарный оператор сложения
+/*
+let users = "25";
+let admins = "10";
+console.log(users + admins);
+
+console.log(+users + +admins);
+
+// Более длинная запись
+console.log(Number(users) + Number(admins));
+*/
+
+// Приоритеты: скобки - основной приоритет, умножение/деление - повышенный
+// вычитание/сложение - второстепенный
+/*
+let resultOne = 5 - 2*3;
+console.log(resultOne);
+
+let resultTwo = (5 - 2) * 3;
+console.log(resultTwo);
+
+let resultTree = 2 - 1 + 5;
+console.log(resultTree);
+*/
+
+// Оператор присвоения
+/*
+let a = 1 + 2;
+let b = 2;
+
+let result = 8 - (a = b + 3);       // Низкая читабельность кода. Так записывать не рекомендуется.
+console.log("Результат в скобках: " + a);
+console.log("Общий результат: " + result);
+*/
+
+// Присвоение по цепочке
+/*
+let resultOne = resultTwo = resultThree = 1 + 2;
+console.log(resultOne);
+console.log(resultTwo);
+console.log(resultThree);       // Везде получится один рез-т = 3.
+*/
+
+// Сокращённая запись вычислений с присвоением
+/*
+let users = 5;
+users = users + 3;
+users = users *= 2;
+*/
+// Можно записать так:
+/*
+let users = 5;
+console.log(users);
+users += 3;
+console.log(users);
+users *= 2;
+console.log(users);
+*/
+/*
+let users = 5;
+console.log(users);
+users += 1 + 2;         //по правилу приоритета сначала будет 1+2, затем 3+5
+console.log(users);     // Результат получится 8.
+*/
+
+// Инкременты (++) и Декременты (--) когда нужно увеличить/уменьшить число на 1.
+/*
+let addUser = 2;
+addUser++;                  //Инкремент
+console.log(addUser);
+//работает так же, как и addUser = addUser + 1; или addUser += 1;
+
+
+let removeUser = 2;
+removeUser--;                  //Декремент
+console.log(removeUser);
+*/
+//располагать можем как до, так и после переменной
+
+//Постфиксная форма
+/*
+userCounter++;
+userCounter--;
+*/
+
+
+//Префиксная форма
+/*
+++userCounter;
+--userCounter;
+*/
+
+/*
+let usersCounter = 0;
+let newUsers = usersCounter++;  //Результат = 0, потому что newUsers получает значение ещё до присвоения оператора.
+console.log(newUsers);
+*/
+/*
+let usersCounter = 0;
+let newUsers = ++usersCounter;
+console.log(newUsers);          //Результат равен 1.
+*/
+
+//Итого, если результат оператора не используется, а нужно только
+//увеличить/уменьшить переменную, тогда без разницы, какую форму исп-ть
+/*
+let usersCounter = 0;
+usersCounter++;
+console.log(usersCounter);
+*/
+/*
+let usersCounter = 0;
+++usersCounter;
+console.log(usersCounter);      //И там и там рез-т будет одинаковый.
+*/
+
+//Если сразу нужен рез-т, используем префиксную форму
+/*
+let userCounter = 0;
+console.log(++userCounter);
+*/
+
+
 
 
 
