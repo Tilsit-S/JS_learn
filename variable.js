@@ -490,10 +490,26 @@ console.log(usersCounter);      //И там и там рез-т будет од�
 */
 
 //Если сразу нужен рез-т, используем префиксную форму
-
+/*
 let userCounter = 0;
 console.log(++userCounter);
+*/
 
+
+
+// DZ
+console.log('35' + - "22");
+console.log('35' * "22");
+//console.log('558' > 22++);
+
+let userCounter = 0;
+let newUsers = userCounter++;
+console.log(newUsers);
+
+console.log(!false && 11 || 18 && !'');
+
+let name = 0;
+console.log(name && "Без имени")
 
 
 
