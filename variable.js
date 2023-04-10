@@ -513,5 +513,18 @@ console.log(name && "Без имени")
 */
 
 
+/*
+let num = 0;
+while (num < 5) {
+    console.log(num);
+    num++;
+}
+*/
 
+
+// без {}
+let Num = 5;
+while (Num) console.log(Num--);
+
+//Если условие сработало, т.е. true, то этот процесс называется "итерация"
 
